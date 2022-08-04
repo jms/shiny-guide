@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "containers"
+version = "0.1.0"
+description = "Build containers"
+authors = ["Jeronimo Martinez Sanchez <jms@rz0r.net>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ansible = "^6.2.0"
+ansible-lint = "^6.4.0"
+ansible-bender = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+selinux = "^0.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
