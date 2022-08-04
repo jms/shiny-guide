@@ -21,7 +21,10 @@ jobs:
           cache: "pip"
 
       - name: install dependencies
-        run: pip install -r requirements.txt 
+        run: pip install -r requirements.txt
+
+      - name: check env
+        run: echo "${{ github.actor }}"
 
       - name: Build image
         run: ansible-bender build ./services.yml
