@@ -20,5 +20,8 @@ jobs:
           python-version: "3.10.6"
           cache: "pip"
 
+      - name: install dependencies
+        run: pip install -r requirements.txt 
+
       - name: Build image
         run: ansible-bender build ./services.yml
